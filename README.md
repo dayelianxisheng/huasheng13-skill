@@ -1,10 +1,9 @@
 <div align="center">
 
-# 公考花生十三.skill
+# 公考智策
 
 > *"备考路上，技巧为王，坚持为皇！"*
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![公务员考试](https://img.shields.io/badge/公务员-考试-blue.svg)](https://www.chinagwy.org)
 [![花生十三](https://img.shields.io/badge/花生十三-技巧体系-orange.svg)](https://space.bilibili.com)
 [![Hermes Skill](https://img.shields.io/badge/Hermes-Skill-green.svg)](https://hermes-agent.nousresearch.com)
@@ -14,16 +13,26 @@
 行测做不完？申论写不出？数量关系全蒙C？<br>
 别慌，你只是缺一套**系统化的解题武器库**。
 
-**基于花生十三公开教学体系，覆盖六大模块、二十余题型、上百条速算公式**<br>
+**融合 442 张结构化行测方法卡，覆盖六大模块、二十余题型与常用速算方法**<br>
 **配真题示例与实战复盘方法，让你从"会做"到"做得快"**
 
 [快速开始](#快速开始) · [模块速查](#模块速查) · [答题策略](#答题策略) · [效果示例](#效果示例)
 
 </div>
 
+> 方法卡融合自 [heihei999/huasheng-mcp](https://github.com/heihei999/huasheng-mcp)，依据其 MIT License 使用；详见 `THIRD_PARTY_NOTICES.md`。
+
 ---
 
 ## 快速开始
+
+### 安装到 Codex
+
+```bash
+git clone https://github.com/dayelianxisheng/huasheng13-skill.git ~/.codex/skills/gongkao-zhice
+```
+
+安装后从下一轮对话开始自动生效，也可以显式调用 `$gongkao-zhice`。
 
 ### 什么时候用？
 
@@ -220,10 +229,16 @@ D
 ## 项目结构
 
 ```
-huasheng13-skill/
+gongkao-zhice/
+├── agents/openai.yaml         # Codex UI 元数据
 ├── SKILL.md                    # 技能主文件（触发条件、工作流程）
 ├── README.md                   # 本说明文件
+├── THIRD_PARTY_NOTICES.md      # 第三方知识库来源与许可证
+├── scripts/
+│   ├── search_cards.py        # 结构化方法卡检索
+│   └── test_search_cards.py   # 最小自检
 ├── references/                 # 方法论库（20个文件）
+│   ├── method-cards/          # 442 张结构化行测方法卡与路由索引
 │   ├── ziliao-fenxi.md        #   资料分析全体系
 │   ├── ziliao-susuan.md       #   速算方法详解
 │   ├── ziliao-zonghe.md       #   综合分析题专项
