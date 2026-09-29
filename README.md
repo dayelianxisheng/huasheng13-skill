@@ -1,6 +1,6 @@
 <div align="center">
 
-# 公考智策
+# 公考花生十三.skill
 
 > *"备考路上，技巧为王，坚持为皇！"*
 
@@ -29,10 +29,10 @@
 ### 安装到 Codex
 
 ```bash
-git clone https://github.com/dayelianxisheng/huasheng13-skill.git ~/.codex/skills/gongkao-zhice
+git clone https://github.com/dayelianxisheng/huasheng13-skill.git ~/.codex/skills/huasheng13-skill
 ```
 
-安装后从下一轮对话开始自动生效，也可以显式调用 `$gongkao-zhice`。
+安装后从下一轮对话开始自动生效，也可以显式调用 `$gongkao-huasheng13`。
 
 ### 什么时候用？
 
@@ -229,7 +229,7 @@ D
 ## 项目结构
 
 ```
-gongkao-zhice/
+huasheng13-skill/
 ├── agents/openai.yaml         # Codex UI 元数据
 ├── SKILL.md                    # 技能主文件（触发条件、工作流程）
 ├── README.md                   # 本说明文件
